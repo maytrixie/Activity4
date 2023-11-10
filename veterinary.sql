@@ -35,3 +35,11 @@ CREATE TABLE doctors(
    phone VARCHAR(15),
    email VARCHAR(100),
 );
+
+CREATE TABLE invoices (
+   invoiceid INT PRIMARY KEY,
+   appointid INT FOREIGN KEY,
+   totalamount NUMERIC(10,2),
+   paymentdate TIME,
+   FOREIGN KEY (animalid) REFERENCES animals(animalid)
+);
