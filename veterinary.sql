@@ -156,6 +156,11 @@ UPDATE doctors
 SET dlastname = 'Reyes-Gonzales'
 WHERE dfirstname = 'Dr. Sofia';
 
+-- feat/list-total-sales
+SELECT SUM(totalamount) AS total_sales
+FROM invoices;
+
+
 -- feat/list-species-catered
 SELECT DISTINCT species
 FROM animals;
